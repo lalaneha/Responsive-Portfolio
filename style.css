@@ -196,3 +196,72 @@ body {
     background: #4aaaa5;
     border: 0 none;
   }
+  
+  .wrapper {
+    /* Box-model */
+    width: 980px;
+  
+    /* Positioning */
+    margin: 40px auto;
+  }
+  
+  #main-content,
+  #footer {
+    /* Box-model */
+    width: 1200px;
+    padding: 30px;
+  }
+  
+  #main-content {
+    /* Positioning */
+    float: left;
+  
+    /* Visual */
+    background: #fff;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    body {
+      background-color: #333;
+    }
+  
+    .wrapper {
+      /* Box-model */
+      width: 100%;
+      padding: 20px;
+    }
+  
+    #main-content,
+    #footer {
+      width: 100%;
+    }
+  
+    #sidebar {
+      margin-top: 40px;
+    }
+  }
+  
+  /* Additional Screen Sizes */
+  
+  /* Width at 320px and below */
+  @media screen and (max-width: 320px) {
+    body {
+      background-color: #333;
+    }
+  
+    .wrapper {
+      /* Box-model */
+      width: 100%;
+      padding: 20px;
+    }
+  
+    #main-content,
+    #footer {
+      width: 100%;
+    }
+  
+    #footer {
+      margin-top: 40px;
+    }
+  }
